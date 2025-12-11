@@ -38,11 +38,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dist folder
-        uses: actions/upload-artifact@v4
+        uses: actions/download-artifact@v4
         with:
           name: dist folder 
-          path: dist
-
       - name: output contents 
         run: ls 
       - name: Deploy
